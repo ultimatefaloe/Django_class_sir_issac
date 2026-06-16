@@ -1,0 +1,78 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Home</title>
+  </head>
+  <body>
+    {% include 'components/nav.html'%}
+    <section id="home">
+      <div class="page-header">
+        <div>
+          <h1>🏠 Home</h1>
+          <div class="subtitle">Welcome back, John — here’s your overview</div>
+        </div>
+        <span class="django-badge">Django 4.2 · static</span>
+      </div>
+
+      <!-- quick stats cards -->
+      <div class="card-grid">
+        <div class="card">
+          <div class="stat-number">12</div>
+          <h3>Open tasks</h3>
+          <p>3 due this week</p>
+          <span class="badge">+2 since yesterday</span>
+        </div>
+        <div class="card">
+          <div class="stat-number">6</div>
+          <h3>Active tickets</h3>
+          <p>2 high priority</p>
+          <span class="badge">awaiting reply</span>
+        </div>
+        <div class="card">
+          <div class="stat-number">24</div>
+          <h3>Products</h3>
+          <p>8 new this month</p>
+          <span class="badge">inventory: 143</span>
+        </div>
+        <div class="card">
+          <div class="stat-number">89%</div>
+          <h3>Completion rate</h3>
+          <p>Last 30 days</p>
+          <span class="badge">↑ 5%</span>
+        </div>
+      </div>
+
+      <!-- recent activity (django-like) -->
+      <div class="page-section mt-4">
+        <div class="section-title">
+          <span>📋 Recent activity</span>
+          <span style="font-size: 0.8rem; font-weight: 400; color: #64748b"
+            >from your projects</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">Design review for homepage</span>
+          <span class="item-meta"
+            ><span class="status-tag">in progress</span> 2h ago</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">Ticket #1024: login issue</span>
+          <span class="item-meta"
+            ><span class="status-tag orange">open</span> 5h ago</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">New product “Ergonomic chair” added</span>
+          <span class="item-meta"
+            ><span class="status-tag green">published</span> yesterday</span
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

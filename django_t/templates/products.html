@@ -1,0 +1,79 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Home</title>
+  </head>
+  <body>
+    {% include 'components/nav.html'%}
+    <section id="tickets" >
+      <div class="page-header">
+        <div>
+          <h1>🎫 Tickets</h1>
+          <div class="subtitle">Support & issue tracking</div>
+        </div>
+        <span class="btn btn-outline">View all</span>
+      </div>
+
+      <div class="page-section">
+        <div class="section-title">
+          <span>🕒 Open tickets (6)</span>
+          <span style="font-size: 0.8rem; font-weight: 400; color: #64748b"
+            >sorted by priority</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">[High] Payment gateway timeout</span>
+          <span class="item-meta"
+            ><span class="status-tag orange">critical</span> #1024</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">[Medium] Profile picture not updating</span>
+          <span class="item-meta"
+            ><span class="status-tag">open</span> #1021</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">[Low] Typo in footer</span>
+          <span class="item-meta"
+            ><span class="status-tag purple">on hold</span> #1019</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">[High] SSL certificate renewal</span>
+          <span class="item-meta"
+            ><span class="status-tag orange">critical</span> #1018</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">[Medium] Mobile responsiveness issue</span>
+          <span class="item-meta"
+            ><span class="status-tag">open</span> #1015</span
+          >
+        </div>
+      </div>
+
+      <div class="page-section mt-4" style="background: #fafcff">
+        <div class="section-title">
+          <span>✅ Recently closed</span>
+        </div>
+        <div class="list-item">
+          <span class="item-title">#1012 · Email notification bug</span>
+          <span class="item-meta"
+            ><span class="status-tag green">fixed</span> 2d ago</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">#1009 · Search bar not filtering</span>
+          <span class="item-meta"
+            ><span class="status-tag green">fixed</span> 4d ago</span
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

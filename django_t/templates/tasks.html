@@ -1,0 +1,65 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Tasks </title>
+  </head>
+  <body>
+    {% include 'components/nav.html'%}
+
+    <section id="tasks" >
+      <div class="page-header">
+        <div>
+          <h1>✅ Tasks</h1>
+          <div class="subtitle">Manage your daily tasks</div>
+        </div>
+        <span class="btn">+ Add task</span>
+      </div>
+
+      <div class="page-section">
+        <div class="section-title">
+          <span>📌 All tasks</span>
+          <span style="font-size: 0.8rem; font-weight: 400; color: #64748b"
+            >12 total</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">Write user documentation</span>
+          <span class="item-meta"
+            ><span class="status-tag">pending</span> due: 2026-06-20</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">Fix navigation bug in dashboard</span>
+          <span class="item-meta"
+            ><span class="status-tag green">done</span> due: 2026-06-15</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">Review pull requests #23, #24</span>
+          <span class="item-meta"
+            ><span class="status-tag orange">in review</span> due:
+            2026-06-18</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">Update product images</span>
+          <span class="item-meta"
+            ><span class="status-tag purple">waiting</span> due:
+            2026-06-22</span
+          >
+        </div>
+        <div class="list-item">
+          <span class="item-title">Prepare weekly report</span>
+          <span class="item-meta"
+            ><span class="status-tag">pending</span> due: 2026-06-17</span
+          >
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>

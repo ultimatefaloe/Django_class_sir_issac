@@ -1,0 +1,69 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Home</title>
+  </head>
+  <body>
+    {% include 'components/nav.html'%}
+    <section id="products">
+      <div class="page-header">
+        <div>
+          <h1>📦 Products</h1>
+          <div class="subtitle">Inventory & catalog</div>
+        </div>
+        <span class="btn">+ New product</span>
+      </div>
+
+      <div class="page-section">
+        <div class="section-title">
+          <span>🛒 Product list (24)</span>
+          <span style="font-size: 0.8rem; font-weight: 400; color: #64748b"
+            >8 new this month</span
+          >
+        </div>
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-name">Ergonomic chair</div>
+            <div class="product-price">$249.00</div>
+            <div class="product-desc">High back, mesh</div>
+            <span class="badge" style="margin-top: 0.3rem">in stock</span>
+          </div>
+          <div class="product-item">
+            <div class="product-name">Wireless mouse</div>
+            <div class="product-price">$39.99</div>
+            <div class="product-desc">Bluetooth, 3 colors</div>
+            <span class="badge" style="margin-top: 0.3rem">low stock</span>
+          </div>
+          <div class="product-item">
+            <div class="product-name">USB-C hub</div>
+            <div class="product-price">$79.00</div>
+            <div class="product-desc">7-in-1, 4K</div>
+            <span class="badge" style="margin-top: 0.3rem">in stock</span>
+          </div>
+          <div class="product-item">
+            <div class="product-name">Notebook A5</div>
+            <div class="product-price">$12.50</div>
+            <div class="product-desc">120 pages, dotted</div>
+            <span class="badge" style="margin-top: 0.3rem">in stock</span>
+          </div>
+          <div class="product-item">
+            <div class="product-name">Desk lamp</div>
+            <div class="product-price">$45.00</div>
+            <div class="product-desc">LED, touch dimmer</div>
+            <span class="badge" style="margin-top: 0.3rem">out of stock</span>
+          </div>
+          <div class="product-item">
+            <div class="product-name">Coffee mug</div>
+            <div class="product-price">$9.99</div>
+            <div class="product-desc">Ceramic, 350ml</div>
+            <span class="badge" style="margin-top: 0.3rem">in stock</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
