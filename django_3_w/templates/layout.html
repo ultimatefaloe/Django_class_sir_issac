@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock %}</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <nav class="flex bg-blue-200 p-4 justify-around">
+      <div class="flex justify-center gap-3">
+        <a href="/" class="text-blue-600 p-2 font-bold hover:text-blue-800 text-lg">Home</a>
+        <a href="/about" class="text-blue-600 p-2 font-bold hover:text-blue-800 text-lg">About</a>
+        <a href="/posts" class="text-blue-600 p-2 font-bold hover:text-blue-800 text-lg">Posts</a>
+      </div>
+    </nav>
+
+    <main>{% block main %} {% endblock %}</main>
+  </body>
+</html>
