@@ -1,0 +1,13 @@
+{% extends 'layout.html'%} 
+{% block title%} {{post.title}} {% endblock %} 
+
+{% block main %}
+<section>
+  <h1 class="text-xl font-bold">{{post.title}}</h1>
+
+  <p class="text-sm text-gray-500">{{post.date}}</p>
+  <p>{{post.body}}</p>
+</section>
+
+{% endblock %}
+
